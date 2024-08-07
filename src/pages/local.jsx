@@ -1,11 +1,11 @@
 import React from 'react'
-
+import img from "/src/images/firefun.jpg"
   
 const newsData = [
   {
     title: 'Adele Says She Won\'t Perform One Of Her Biggest Hits Ever Again',
     summary: 'Adele shares surprising update on retirement plans...',
-    imageUrl: 'https://via.placeholder.com/400',
+    imageUrl: "/imges/firefun",
     source: 'The News International',
     time: '3 hours ago'
   },

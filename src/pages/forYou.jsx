@@ -25,20 +25,7 @@ const newsData = [
       source: "Ghana Web",
       time: '4 hours ago'
     },
-    {
-      title: 'Google Sounds Urgent Warning To Kill This Setting On Your Android Phone',
-      summary: 'Google is advising users to turn off a certain setting...',
-      imageUrl: 'https://via.placeholder.com/400',
-      source: 'Hot Hardware',
-      time: '4 hours ago'
-    },
-    {
-      title: 'Google Sounds Urgent Warning To Kill This Setting On Your Android Phone',
-      summary: 'Google is advising users to turn off a certain setting...',
-      imageUrl: 'https://via.placeholder.com/400',
-      source: 'Hot Hardware',
-      time: '4 hours ago'
-    },
+    
     // Add more news items here
   ];
 
@@ -53,7 +40,7 @@ const newsData = [
                             key={index}
                             title={news.title}
                             summary={news.summary}
-                            imageUrl={news.imageUrl}
+                            imageUrl={news.image}
                             source={news.source}
                             time={news.time}
                         />

@@ -26,42 +26,39 @@ const newsData = [
       source: "Ghana Web",
       time: '4 hours ago'
     },
-    {
-      title: 'Google Sounds Urgent Warning To Kill This Setting On Your Android Phone',
-      summary: 'Google is advising users to turn off a certain setting...',
-      imageUrl: 'https://via.placeholder.com/400',
-      source: 'Hot Hardware',
-      time: '4 hours ago'
-    },
-    {
-      title: 'Google Sounds Urgent Warning To Kill This Setting On Your Android Phone',
-      summary: 'Google is advising users to turn off a certain setting...',
-      imageUrl: 'https://via.placeholder.com/400',
-      source: 'Hot Hardware',
-      time: '4 hours ago'
-    },
+    
     // Add more news items here
   ];
 
 
 
-    // const Home = () => {
-    //     return (
-    //         <Layout>
-    //             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-    //                 {newsData.map((news, index) => (
-    //                     <NewsCard
-    //                         key={index}
-    //                         title={news.title}
-    //                         summary={news.summary}
-    //                         imageUrl={news.imageUrl}
-    //                         source={news.source}
-    //                         time={news.time}
-    //                     />
-    //                 ))}
-    //             </div>
-    //         </Layout>
-    //     );
-    // };
+    const Home = () => {
+        return (
+            <Layout>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {newsData.map((news, index) => (
+                        <NewsCard
+                            key={index}
+                            title={news.title}
+                            summary={news.summary}
+                            imageUrl={news.imageUrl}
+                            source={news.source}
+                            time={news.time}
+                        />
+                    ))}
+                </div>
+            </Layout>
+        );
+    };
 
+    export default Home
+
+  
+    
+    // const Home = () => {
+    //   return (
+    //     <div>Home</div>
+    //   )
+    // }
+    
     // export default Home
