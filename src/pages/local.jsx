@@ -1,4 +1,6 @@
 import React from 'react'
+import Layout from '../components/layout';
+import NewsCard from '../components/newsCard';
 
   
 const newsData = [

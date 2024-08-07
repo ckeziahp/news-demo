@@ -5,6 +5,7 @@ import Health from "./pages/health"
 import Sports from "./pages/sports"
 import Local from "./pages/local"
 import World from "./pages/world"
+import Following from "./pages/following"
 
 function App() {
 
@@ -29,7 +30,10 @@ const router = createBrowserRouter([
     path:"/local",
     element:<Local/>
   },
-  
+  {
+    path:"/following",
+    element:<Following/>
+  },
   {
     path:"/world",
     element:<World/>

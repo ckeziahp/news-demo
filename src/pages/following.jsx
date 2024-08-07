@@ -1,9 +1,10 @@
 import React from 'react'
-import NewsCard from '../components/newsCard';
 import Layout from '../components/layout';
+import NewsCard from '../components/newsCard';
 
-const Sports = () => {
-  const newsData = [
+
+
+const newsData = [
     {
       title: 'The President has declared a Nationwide Holiday for the Country',
       summary: 'The President has declared a...',
@@ -28,24 +29,23 @@ const Sports = () => {
     
     // Add more news items here
   ];
+const Following = () => {
+    return (
+        <Layout>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {newsData.map((news, index) => (
+                    <NewsCard
+                        key={index}
+                        title={news.title}
+                        summary={news.summary}
+                        imageUrl={news.imageUrl}
+                        source={news.source}
+                        time={news.time}
+                    />
+                ))}
+            </div>
+        </Layout>
+    );
+    };
 
-
-  return (
-    <Layout>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {newsData.map((news, index) => (
-                <NewsCard
-                    key={index}
-                    title={news.title}
-                    summary={news.summary}
-                    imageUrl={news.imageUrl}
-                    source={news.source}
-                    time={news.time}
-                />
-            ))}
-        </div>
-    </Layout>
-);
-};
-
-export default Sports
+export default Following
