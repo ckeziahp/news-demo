@@ -6,6 +6,7 @@ import Sports from "./pages/sports"
 import Local from "./pages/local"
 import World from "./pages/world"
 import Following from "./pages/following"
+// import Science from "./pages/science"
 
 function App() {
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
     path:"/world",
     element:<World/>
   },
+  // {
+  //   path:"/science",
+  //   element:<Science/>
+  // },
 ])
   return (
     <>

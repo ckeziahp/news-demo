@@ -67,16 +67,19 @@
 
 
 import React from 'react';
+import image1 from "../assets/images/image1.jpg"
+// import image2 from"../assets/images/image2.jpg"
+// import image3 from "../assets/images/image3.jpg"
 
 function NewsCard({ title, summary, source, time }) {
     return (
-        <div className="flex max-w-md rounded overflow-hidden shadow-lg">
+        <div className="flex max-w-md rounded overflow-hidden shadow-lg h-full">
             <div className="flex-none w-48 bg-cover text-center overflow-hidden">
-                <img className="w-full h-full object-cover" src="img" alt={title} />
+                <img className="w-[800px] rounded-md object-cover h-[250px]" src={image1} alt={title} />
             </div>
-            <div className="flex flex-col justify-between p-4 flex-grow">
+            <div className="flex flex-col justify-between p-10 flex-grow">
                 <div>
-                    <div className="font-bold text-xl mb-2">{title}</div>
+                    <div className="font-bold text-xl mb-2 p-2">{title}</div>
                     <p className="text-gray-700 text-base">{summary}</p>
                 </div>
                 <div className="mt-4 flex justify-between">
@@ -88,6 +91,7 @@ function NewsCard({ title, summary, source, time }) {
                     </span>
                 </div>
             </div>
+
         </div>
     );
 }
