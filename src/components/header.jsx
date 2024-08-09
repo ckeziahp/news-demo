@@ -58,12 +58,11 @@ const NavBar = () => {
         <div className="flex justify-between items-center px-4 py-2 lg:px-8">
           <div className="flex items-center space-x-4">
             <a href="/" className="text-lg font-bold text-gray-600">
-              <b className="text-blue-600">G</b>
-              <b className="text-red-600">o</b>
-              <b className="text-yellow-600">o</b>
-              <b className="text-blue-600">g</b>
-              <b className="text-green-600">l</b>
-              <b className="text-red-600">e</b> News
+              <b className="text-blue-600">N</b>
+              <b className="text-red-600">e</b>
+              <b className="text-yellow-600">w</b>
+              <b className="text-blue-600">s</b>
+               News
             </a>
           </div>
   
